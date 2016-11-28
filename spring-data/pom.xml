@@ -27,36 +27,26 @@
 			<artifactId>h2</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+
 	</dependencies>
 
-	<!-- <build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+	<!-- <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> </plugins> </build> 
+		<repositories> <repository> <id>spring-releases</id> <name>Spring Releases</name> 
+		<url>https://repo.spring.io/libs-release</url> </repository> <repository> 
+		<id>org.jboss.repository.releases</id> <name>JBoss Maven Release Repository</name> 
+		<url>https://repository.jboss.org/nexus/content/repositories/releases</url> 
+		</repository> </repositories> <pluginRepositories> <pluginRepository> <id>spring-releases</id> 
+		<name>Spring Releases</name> <url>https://repo.spring.io/libs-release</url> 
+		</pluginRepository> </pluginRepositories> -->
 
-	<repositories>
-		<repository>
-			<id>spring-releases</id>
-			<name>Spring Releases</name>
-			<url>https://repo.spring.io/libs-release</url>
-		</repository>
-		<repository>
-			<id>org.jboss.repository.releases</id>
-			<name>JBoss Maven Release Repository</name>
-			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>spring-releases</id>
-			<name>Spring Releases</name>
-			<url>https://repo.spring.io/libs-release</url>
-		</pluginRepository>
-	</pluginRepositories>-->
-	
 </project>
