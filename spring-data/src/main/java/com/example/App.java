@@ -13,7 +13,7 @@ import com.example.repositories.CustomerRepository;
 @SpringBootApplication
 public class App {
 
-	private static final Logger log = LoggerFactory.getLogger(App.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
 	@Bean
 	public CommandLineRunner demo(CustomerRepository repository) {
@@ -26,27 +26,27 @@ public class App {
 			repository.save(new Customer("Michelle", "Dessler"));
 
 			// fetch all customers
-			log.info("Customers found with findAll():");
-			log.info("-------------------------------");
+			LOGGER.info("Customers found with findAll():");
+			LOGGER.info("-------------------------------");
 			for (Customer customer : repository.findAll()) {
-				log.info(customer.toString());
+				LOGGER.info(customer.toString());
 			}
-			log.info("");
+			LOGGER.info("");
 
 			// fetch an individual customer by ID
 			Customer customer = repository.findOne(1L);
-			log.info("Customer found with findOne(1L):");
-			log.info("--------------------------------");
-			log.info(customer.toString());
-			log.info("");
+			LOGGER.info("Customer found with findOne(1L):");
+			LOGGER.info("--------------------------------");
+			LOGGER.info(customer.toString());
+			LOGGER.info("");
 
 			// fetch customers by last name
-			log.info("Customer found with findByLastName('Bauer'):");
-			log.info("--------------------------------------------");
+			LOGGER.info("Customer found with findByLastName('Bauer'):");
+			LOGGER.info("--------------------------------------------");
 			for (Customer bauer : repository.findByLastName("Bauer")) {
-				log.info(bauer.toString());
+				LOGGER.info(bauer.toString());
 			}
-			log.info("");
+			LOGGER.info("");
 		};
 	}
 
